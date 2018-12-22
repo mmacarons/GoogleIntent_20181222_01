@@ -45,5 +45,17 @@
         android:layout_height="wrap_content"
         android:text="카카오톡 다운로드"/>
 
+    <Button
+        android:id="@+id/naverWebLinkBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="네이버 웹페이지 띄우기"/>
+
+    <Button
+        android:id="@+id/tjeItMapBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="더조은IT 종로 지도보기"/>
+
 
 </LinearLayout>

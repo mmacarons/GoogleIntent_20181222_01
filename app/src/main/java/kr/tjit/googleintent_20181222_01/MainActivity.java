@@ -16,6 +16,8 @@ public class MainActivity extends BaseActivity {
     EditText contentEdt;
     Button smsBtn;
     Button kakaoMarketLinkBtn;
+    Button naverWebLinkBtn;
+    Button tjeItMapBtn;
 
 
     @Override
@@ -86,6 +88,26 @@ public class MainActivity extends BaseActivity {
                 startActivity(intent);
             }
         });
+
+        naverWebLinkBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String naverUrl = "http://www.naver.com";
+                Uri uri = Uri.parse(naverUrl);
+                Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+                startActivity(intent);
+            }
+        });
+
+        tjeItMapBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+//                위도 / 경도 값을 삽입
+                Uri uri = Uri.parse("geo:37.569289,126.985314");
+                Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+                startActivity(intent);
+            }
+        });
     }
 
     @Override
@@ -102,6 +124,8 @@ public class MainActivity extends BaseActivity {
         contentEdt = findViewById(R.id.contentEdt);
         smsBtn = findViewById(R.id.smsBtn);
         kakaoMarketLinkBtn = findViewById(R.id.kakaoMarketLinkBtn);
+        naverWebLinkBtn = findViewById(R.id.naverWebLinkBtn);
+        tjeItMapBtn = findViewById(R.id.tjeItMapBtn);
 
     }
 }
