@@ -39,5 +39,11 @@
         android:layout_height="wrap_content"
         android:text="SMS 발송"/>
 
+    <Button
+        android:id="@+id/kakaoMarketLinkBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="카카오톡 다운로드"/>
+
 
 </LinearLayout>
